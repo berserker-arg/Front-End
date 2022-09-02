@@ -1,0 +1,13 @@
+app-social{
+    float: right;
+    margin-top: 5px;
+}
+button{
+    float: right;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    
+}
+app-social{
+    float: right;
+}

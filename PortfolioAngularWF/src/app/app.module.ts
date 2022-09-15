@@ -4,9 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
-import { SocialComponent } from './components/social/social.component';
-import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
@@ -15,19 +12,17 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LogoAPComponent,
-    SocialComponent,
-    BannerComponent,
     AcercaDeMiComponent,
     EstudiosComponent,
     ExperienciaComponent,
     AppComponent,
     HabilidadesComponent,
-    ProyectosComponent
+    ProyectosComponent,
   ],
   imports: [
     BrowserModule,

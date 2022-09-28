@@ -9,11 +9,11 @@ export class HabilidadesComponent implements OnInit {
 
   items=[
     {porcent:65,image:"/assets/html5.png",nombre:"HTML5"},
-    {porcent:60 , image:"",nombre:"CSS"},
-    {porcent:35 , image:"",nombre:"JavaScript"},
-    {porcent:70 , image:"",nombre:"Git"},
-    {porcent:65 , image:"",nombre:"GitHub"},
-    {porcent:55 , image:"",nombre:"Angular"},
+    {porcent:60 , image:"/assets/iconoCss.png",nombre:"CSS"},
+    {porcent:35 , image:"/assets/iconoJavascript.png",nombre:"JavaScript"},
+    {porcent:70 , image:"/assets/iconoGit.png",nombre:"Git"},
+    {porcent:65 , image:"/assets/iconoGithub.png",nombre:"GitHub"},
+    {porcent:55 , image:"/assets/iconoAngular.png",nombre:"Angular"},
 
   ];
 

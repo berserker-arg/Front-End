@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienciaComponent implements OnInit {
 
+  trabajos = [
+    {trabajo:"Trabajo",tiempo:"Años de trabajo",resumen:"Lorem ipsum dolor sit amet consectetur adipisicing elit.", imagen:""}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

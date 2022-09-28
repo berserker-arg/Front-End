@@ -1,50 +1,20 @@
 <div id="experiencia" class="row">
     <div class="row">
         <h2 id="titulo">Experiencia laboral</h2>
-        <!--  Trabajo 1  -->
-        <div class="row">
+        <!--  Trabajos  -->
+        <div class="row" *ngFor="let trabaj of trabajos">
             <div class="col-2">
                 <img src="assets/imagenprueba.jpg">
             </div>
             <div class="col-xs-8">
             <ul>
                 <li>
-                    <h3>Trabajo</h3><h5>Años de trabajo</h5>
+                    <h3>{{trabaj.trabajo}}</h3><h5>{{trabaj.tiempo}}</h5>
                 </li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo velit saepe sint corrupti asperiores assumenda commodi cum quae, quas maxime recusandae necessitatibus modi soluta dolor, dignissimos eveniet delectus in.</p>
+                <p>{{trabaj.resumen}}</p>
 
             </ul>
             </div>
         </div>
-        
-        
-        <!--  Trabajo 2  -->
-        <div class="row">
-            <div class="col-2">
-                <img src="assets/imagenprueba.jpg">
-            </div>
-            <div class="col-xs-8">
-            <ul>
-                <li>
-                    <h3>Trabajo</h3><h5>Años de trabajo</h5>
-                </li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo velit saepe sint corrupti asperiores assumenda commodi cum quae, quas maxime recusandae necessitatibus modi soluta dolor, dignissimos eveniet delectus in.</p>
-
-            </ul>
-            </div>
-        </div>
-        
-        
-
-
-
-
-
-
     </div>
-
-
-
-
-
 </div>

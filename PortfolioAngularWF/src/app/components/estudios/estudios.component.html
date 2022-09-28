@@ -1,50 +1,20 @@
 <div id="estudios" class="row">
     <h2 id="untitulo">Estudios</h2>
-    <!-- Estudio 1 -->
-    <div class="row">       
-        <div class="col-3">
-            <img src="assets/imagenprueba.jpg">
+   
+    
+    <div *ngFor="let estudio of estudios">
+        <div class="row">
+            <div class="col-3">
+                <img src="assets/imagenprueba.jpg">
+            </div>        
+            <div class="col-8">
+                <ul>
+                    <li>
+                        <h3>{{estudio.actividad}}</h3><h5>{{estudio.anio}}</h5>
+                    </li>
+                    <p>{{estudio.lugar}}</p>
+                </ul>
+            </div>
         </div>
-        
-        <div class="col-8">
-            <ul>
-                <li>
-                    <h3>Estudio</h3><h5>año</h5>
-                </li>
-                <p>Lugar</p>
-            </ul>
-        </div>
-    </div>    
-        <!-- Estudio 2 -->
-    <div class="row">
-        <div class="col-3">
-            <img src="assets/imagenprueba.jpg">
-        </div>    
-        
-        <div class="col-8">
-            <ul>
-                <li>
-                    <h3>Estudio</h3><h5>año</h5>
-                </li>
-                <p>Lugar</p>
-            </ul>
-        </div>
-    </div>    
-        <!-- Estudio 3 -->
-    <div class="row">
-        <div class="col-3">
-            <img src="assets/imagenprueba.jpg">
-        </div>        
-        <div class="col-8">
-            <ul>
-                <li>
-                    <h3>Estudio</h3><h5>año</h5>
-                </li>
-                <p>Lugar</p>
-            </ul>
-        </div>
-
-
-
-    </div>
-</div>
+    </div>        
+</div>    

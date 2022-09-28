@@ -10,6 +10,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { RoutingActivadoComponent } from './components/routing-activado/routing-activado.component';
 
 
 
@@ -23,6 +24,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
     AppComponent,
     HabilidadesComponent,
     ProyectosComponent,
+    RoutingActivadoComponent,
   ],
   imports: [
     BrowserModule,

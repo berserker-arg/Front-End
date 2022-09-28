@@ -1,62 +1,10 @@
 <div class="row">
     <h2 id="tituloo">Habilidades</h2>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"
+    *ngFor="let item of items">
         <circle-progress
-        [percent]="70"
-        [radius]="80"
-        [imageSrc]="'assets/html5.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="500"
-        ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
-        [percent]="70"
-        [radius]="80"
-        [imageSrc]="'assets/html5.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="500"
-        ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
-        [percent]="70"
-        [radius]="80"
-        [imageSrc]="'assets/html5.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="500"
-        ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
-        [percent]="70"
+        
+        [percent]="item.porcent" 
 
         [radius]="80"
         [imageSrc]="'assets/html5.png'"
@@ -70,27 +18,9 @@
         [animation]="true"
         [animationDuration]="500"
         ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
-        [percent]="70"
-
-        [radius]="80"
-        [imageSrc]="'assets/html5.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="500"
-        ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
+        
+        <h6>{{item.nombre}}</h6>
+        <h6>{{item.porcent + "%"}}</h6>
     </div>
 </div>    
     

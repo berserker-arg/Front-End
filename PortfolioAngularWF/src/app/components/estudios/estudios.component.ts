@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EstudiosComponent implements OnInit {
 
+  estudios = [
+    {actividad: "Tecnico en mantenimiento y reparacion de pc", anio: "2012",lugar:"fundacion saber" }
+    
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HabilidadesComponent implements OnInit {
 
+  items=[
+    {porcent:93,image:"",nombre:"HTML5"}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

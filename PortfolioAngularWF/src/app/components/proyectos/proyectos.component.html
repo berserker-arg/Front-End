@@ -1,31 +1,16 @@
 <div class="row">
-    <h2 id="titulooo">Mis Proyectos</h2>
-    <div >
+    <h2 id="titulooo">Proyectos</h2>
+    <div *ngFor="let proyecto of proyectos">
         
         <div class="row">
             <div> <!-- imagen proyecto -->
-                <img src="assets/reparacionpc.png" alt="imagen proyecto">
+                <img  src={{proyecto.image}} alt="imagen proyecto">
             </div>
             
         </div>
         <div class="row">
-            <h4>Proyecto 1</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eum, quae, libero est rem illum recusandae, cupiditate quisquam cum eos labore provident nemo quibusdam nesciunt necessitatibus aliquam consequatur laudantium ipsam!</p>
-        
-        </div>
-        
-    </div>
-    <div>
-        
-        <div class="row">
-            <div> <!-- imagen proyecto -->
-                <img src="assets/reparacionpc.png" alt="imagen proyecto">
-            </div>
-            
-        </div>
-        <div class="row">
-            <h4>Proyecto 2</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eum, quae, libero est rem illum recusandae, cupiditate quisquam cum eos labore provident nemo quibusdam nesciunt necessitatibus aliquam consequatur laudantium ipsam!</p>
+            <h4>{{proyecto.nombre}}</h4>
+            <p>{{proyecto.resumen}}</p>
         
         </div>
         

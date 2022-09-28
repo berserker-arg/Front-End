@@ -3,10 +3,10 @@
         <h2 id="titulo">Experiencia laboral</h2>
         <!--  Trabajos  -->
         <div class="row" *ngFor="let trabaj of trabajos">
-            <div class="col-2">
-                <img src="assets/imagenprueba.jpg">
+            <div class="col-4">
+                <img src="{{trabaj.imagen}}">
             </div>
-            <div class="col-xs-8">
+            <div class="col-7">
             <ul>
                 <li>
                     <h3>{{trabaj.trabajo}}</h3><h5>{{trabaj.tiempo}}</h5>

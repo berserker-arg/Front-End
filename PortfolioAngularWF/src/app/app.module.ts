@@ -36,7 +36,7 @@ import { RoutingActivadoComponent } from './components/routing-activado/routing-
       innerStrokeWidth: 8,
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
-      animationDuration: 300,
+     
       
     })
     

@@ -1,20 +1,60 @@
 <div id="experiencia" class="row">
     <div class="row">
-        <h2 id="titulo">Experiencia laboral</h2>
-        <!--  Trabajos  -->
-        <div class="row" *ngFor="let trabaj of trabajos">
-            <div class="col-4">
-                <img src="{{trabaj.imagen}}">
+        <div class="col-10">
+            <h2 id="titulo">Experiencia laboral</h2>    
+        </div>
+            <!-- Button modal -->
+        <div class="col-1" >
+            <button type="button" class="btn btn-primary btn-success" data-bs-toggle="modal" data-bs-target="#modalExperiencia">
+            Agregar
+        </button>     
+    </div>
+        <!-- Modal -->
+    <div class="modal fade" id="modalExperiencia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Agregar experiencia laboral</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="col-7">
-            <ul>
-                <li>
-                    <h3>{{trabaj.trabajo}}</h3><h5>{{trabaj.tiempo}}</h5>
-                </li>
-                <p>{{trabaj.resumen}}</p>
+            <div class="modal-body">
+                <!-- Relleno del modal -->
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Trabajo</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nombre de trabajo o funcion</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Tiempo transcurrido</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Tiempo dedicado (ej. 2018-2021)</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Resumen</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Pequeña descripcion de funcion cumplida</div>
+                </div>
 
-            </ul>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
             </div>
         </div>
+        </div>
+    </div>  
+        <!--  Trabajos  -->
+    <div class="row" *ngFor="let trabaj of trabajos">
+        <div class="col-4">
+        <img src="{{trabaj.imagen}}">
+    </div>
+     <div class="col-7">
+        <ul>
+            <li>
+                <h3>{{trabaj.trabajo}}</h3><h5>{{trabaj.tiempo}}</h5>
+            </li>
+        <p>{{trabaj.resumen}}</p>
+    </ul>
+    </div>
     </div>
 </div>

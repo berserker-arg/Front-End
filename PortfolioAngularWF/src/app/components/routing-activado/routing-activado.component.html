@@ -1,3 +1,30 @@
-<div class="row">
+<div class="row" *ngIf="activarRouting; then activado else desactivado"></div>
+<ng-template #activado> 
+    <ul class="navbar-bar">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="#">Experiencia</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="#">Estudios</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="#">Habilidades</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="#">Proyectos</a>
+        </li>    
+    </ul>
+<!-- Falta terminar el routing -->
+</ng-template>
+<ng-template #desactivado>
     
-</div>
+    <app-acerca-de-mi></app-acerca-de-mi> 
+    <app-experiencia></app-experiencia>
+    <app-estudios></app-estudios>
+    <app-habilidades></app-habilidades> 
+    <app-proyectos></app-proyectos> 
+
+</ng-template>     

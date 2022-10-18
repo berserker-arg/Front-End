@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoutingActivadoComponent implements OnInit {
 
-  constructor() { }
+  public activarRouting: boolean = false;
+
+  getActivar(){
+    return this.activarRouting;
+  }
+
+  constructor() { 
+
+    
+
+  }
+
+  
 
   ngOnInit(): void {
   }

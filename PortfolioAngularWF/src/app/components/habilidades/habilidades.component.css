@@ -3,5 +3,9 @@ div{
     text-align: center;
 }
 #tituloo{
-    padding-top: 20px;
+    padding-top: 10px;
+}
+#habiliidades{
+    padding: 15px;
+    background-color: aquamarine;
 }

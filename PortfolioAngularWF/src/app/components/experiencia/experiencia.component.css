@@ -6,7 +6,7 @@
 #experiencia {
     background-color: aquamarine;
 }
-img{
+.imagen{
     height: 100px;
     width: 100px;
     margin: 10px;
@@ -19,7 +19,7 @@ img{
     padding: 15px;
 }
 @media (min-width: 768px){
-    img{
+    .imagen{
         margin-left: 50px;
         margin-right: 60px;
         position: relative;
@@ -27,4 +27,9 @@ img{
         height: 150px;
         ;
     }
+}
+.icon{
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
 }

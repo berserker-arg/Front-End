@@ -4,7 +4,7 @@ div{
     
    
 }
-img{
+.imagen{
     height: 175px;
     position:relative;
     top: 30px;
@@ -17,4 +17,9 @@ img{
 }
 #titulooo{
     padding-top: 10px;
+}
+.icon{
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
 }

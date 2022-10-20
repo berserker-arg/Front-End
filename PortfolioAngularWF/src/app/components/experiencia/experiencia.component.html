@@ -5,11 +5,9 @@
         <div class="col-8">
             <h2 id="titulo">Experiencia laboral</h2>    
         </div>
-            <!-- Button modal -->
+            <!-- Button modal -->            
         <div class="col-2" >
-            <button type="button" class="btn btn-primary btn-success btn-outline-white justify-content-end" data-bs-toggle="modal" data-bs-target="#modalExperiencia">
-            Agregar
-        </button>     
+            <button type="button" class="btn justify-content-end" data-bs-toggle="modal" data-bs-target="#modalExperiencia"><img src="assets/iconoMas.png" class="icon"></button>     
         </div>
             <!-- Modal -->
         <div class="modal fade" id="modalExperiencia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -48,7 +46,7 @@
             <!--  Trabajos  -->
         <div class="row" *ngFor="let trabaj of trabajos">
             <div class="col-4">
-                <img src="{{trabaj.imagen}}">
+                <img class="imagen" src="{{trabaj.imagen}}">
             </div>
             <div class="col-7">
                 <ul>

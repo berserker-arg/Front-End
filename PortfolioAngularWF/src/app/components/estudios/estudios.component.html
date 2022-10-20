@@ -2,15 +2,15 @@
     <div class="row">
         <div class="col-2">
         </div>    
-         <div class="col-8">
+        <div class="col-8">
             <h2 id="untitulo">Estudios</h2>
         </div>       
     <!-- Button modal -->
         <div class="col-2" >
-            <button type="button" class="btn btn-primary btn-success btn-outline-white justify-content-end" data-bs-toggle="modal" data-bs-target="#modalEstudios">Agregar</button>     
+            <button type="button" class="btn justify-content-end" data-bs-toggle="modal" data-bs-target="#modalEstudios"><img src="assets/iconoMas.png" class="icon"></button>     
         </div>
     </div>
-    
+ 
         <!-- Modal -->
     <div class="modal fade" id="modalEstudios" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -50,7 +50,7 @@
     <div *ngFor="let estudio of estudios">
         <div class="row">
             <div class="col-4">
-                <img src="{{estudio.imagen}}">
+                <img class="imagen" src="{{estudio.imagen}}">
             </div>        
             <div class="col-7">
                 <ul>

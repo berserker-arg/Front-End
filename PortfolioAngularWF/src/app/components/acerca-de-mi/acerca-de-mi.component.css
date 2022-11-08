@@ -33,7 +33,10 @@ div{
     margin-left: 15px;
     margin-right: 15px;
 }
-
+#banner {
+    width: 100%;
+    height: 40%;
+}
 /* Editar a partir de cierto tamaño */
 @media (min-width: 900px){
     /*  */

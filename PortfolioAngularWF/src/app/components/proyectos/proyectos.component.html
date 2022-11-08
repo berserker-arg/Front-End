@@ -39,8 +39,6 @@
                     <input type="text" class="form-control" aria-describedby="emailHelp">
                     <div class="form-text">URL de imagen del proyecto</div>
                 </div>
-
-
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -48,24 +46,17 @@
             </div>
         </div>
         </div>
-    </div>      
-
-    
-    <div *ngFor="let proyecto of proyectos">
-        
+    </div>          
+    <div *ngFor="let proyecto of proyectos">        
         <div class="row">
             <div> <!-- imagen proyecto -->
                 <img class="imagen" src={{proyecto.image}} alt="imagen proyecto">
-            </div>
-            
+            </div>            
         </div>
         <div class="row">
             <h4>{{proyecto.nombre}}</h4>
-            <p>{{proyecto.resumen}}</p>
-        
-        </div>
-        
+            <p>{{proyecto.resumen}}</p>        
+        </div>       
     </div>
-
 </div>
 

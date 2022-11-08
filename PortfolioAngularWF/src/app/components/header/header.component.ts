@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { PortfolioService } from 'src/app/servicios/portfolio.service';
 import { RoutingActivadoComponent } from '../routing-activado/routing-activado.component';
 
 @Component({
@@ -8,12 +9,13 @@ import { RoutingActivadoComponent } from '../routing-activado/routing-activado.c
 })
 export class HeaderComponent implements OnInit {
    
-
-  constructor() { }
+  constructor(private datosPortfolio:PortfolioService) { }
+  
 
   
 
   ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos();
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-acerca-de-mi',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcercaDeMiComponent implements OnInit {
 
-  acercaDe = ["Estudiante de Mantenimiento industrial (cursando ultima materia) en Instituto Tecnologico Universitario y programacion en Argentina Programa, con intereses en programacion, electronica y automatizacion."];
+  miPortfolio: any;
 
-  constructor() { }
+  constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
+    this.miPortfolio=data;
+    })
   }
 
 }

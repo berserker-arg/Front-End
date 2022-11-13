@@ -11,6 +11,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { RoutingActivadoComponent } from './components/routing-activado/routing-activado.component';
+import { Error404Component } from './components/error404/error404.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -25,6 +27,7 @@ import { RoutingActivadoComponent } from './components/routing-activado/routing-
     HabilidadesComponent,
     ProyectosComponent,
     RoutingActivadoComponent,
+    Error404Component,
   ],
   imports: [
     BrowserModule,
@@ -38,8 +41,8 @@ import { RoutingActivadoComponent } from './components/routing-activado/routing-
       innerStrokeColor: "#C7E596",
      
       
-    })
-
+    }),
+    HttpClientModule
     
     
   ],

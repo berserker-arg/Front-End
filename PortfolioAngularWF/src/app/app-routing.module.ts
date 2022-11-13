@@ -6,6 +6,7 @@ import { EstudiosComponent } from './components/estudios/estudios.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { Error404Component } from './components/error404/error404.component';
 
 const routes: Routes = [
   {path:'inicio', component:HeaderComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:'estudios',component:EstudiosComponent},
   {path:'experiencia',component:ExperienciaComponent},
   {path:'habilidades', component:HabilidadesComponent},
-  {path:'proyectos', component:ProyectosComponent}
+  {path:'proyectos', component:ProyectosComponent},
+  {path:'**', component:Error404Component}
 ];
 
 @NgModule({

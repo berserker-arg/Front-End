@@ -1,0 +1,96 @@
+{
+	"name": "William Peter Finnemore",
+	"titulos": ["Tecnico Universitario en Manteniniento Industrial e Instalaciones", "Front End Developer"],
+	"titulosimg": ["assets/itu.png", "assets/argprog.png"],
+	"acercademi": "Estudiante de Mantenimiento industrial (cursando ultima materia) y programacion en Argentina Programa, con intereses en programacion, electronica y automatizacion.",
+	"estudios": [{
+			"actividad": "Tecnico en mantenimiento y reparacion de pc",
+			"anio": "2012",
+			"lugar": "fundacion saber",
+			"imagen": "/assets/reparacionpc.png"
+		},
+		{
+			"actividad": "Herreria y soldadura",
+			"anio": "2018",
+			"lugar": "Centro de capacitacion laboral",
+			"imagen": "/assets/herreria.jpg"
+		},
+		{
+			"actividad": "Tecnico universitario en mantenimiento indiustrial e instalaciones",
+			"anio": "2019-cursando ultima",
+			"lugar": "Instituto Tecnologico Universitario",
+			"imagen": "/assets/mantenimientoindustrial.jfif"
+		},
+		{
+			"actividad": "Electricidad de automotor, sensores y conexion a computadora de auto",
+			"anio": "2020",
+			"lugar": "Instituto Tecnologico Universitario",
+			"imagen": "/assets/electricidadauto.jpg"
+		},
+		{
+			"actividad": "Programacion web Full Stack Jr",
+			"anio": "2022",
+			"lugar": "Argentina Programa",
+			"imagen": "/assets/argentinaprogr.png"
+		}
+
+	],
+	"trabajos": [{
+			"trabajo": "Tecnico de PC",
+			"tiempo": "2011-2013",
+			"resumen": "Mantenimiento y reparacion de computadoras.",
+			"imagen": "/assets/reparacionpc.png"
+		},
+		{
+			"trabajo": "Atencion al cliente",
+			"tiempo": "2015-2017",
+			"resumen": "Atencion en kiosco y minimarket, recepcion en un hostel, y trabajos esporadicos.",
+			"imagen": "/assets/recepcion.png"
+		},
+		{
+			"trabajo": "Herreria",
+			"tiempo": "2018-hasta la fecha",
+			"resumen": "Diseño y armado de portones, rejas y trabajos de herreria en general.",
+			"imagen": "/assets/herreria.jpg"
+		}
+
+	],
+	"items": [{
+			"porcent": 65,
+			"image": "/assets/html5.png",
+			"nombre": "HTML5"
+		},
+		{
+			"porcent": 60,
+			"image": "/assets/iconoCss.png",
+			"nombre": "CSS"
+		},
+		{
+			"porcent": 35,
+			"image": "/assets/iconoJavascript.png",
+			"nombre": "JavaScript"
+		},
+		{
+			"porcent": 70,
+			"image": "/assets/iconoGit.png",
+			"nombre": "Git"
+		},
+		{
+			"porcent": 65,
+			"image": "/assets/iconoGithub.png",
+			"nombre": "GitHub"
+		},
+		{
+			"porcent": 55,
+			"image": "/assets/iconoAngular.png",
+			"nombre": "Angular"
+		}
+
+	],
+	"proyectos": [{
+		"nombre": "Aquí iría mi proyecto..",
+		"resumen": "Si tan solo tuviera uno!! (este es el primero)",
+		"image": "assets/trofeo.jfif"
+	}]
+
+}

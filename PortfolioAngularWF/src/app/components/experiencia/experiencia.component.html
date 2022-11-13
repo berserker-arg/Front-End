@@ -44,9 +44,9 @@
             </div>
         </div>  
             <!--  Trabajos  -->
-        <div class="row" *ngFor="let trabaj of trabajos">
+        <div class="row" *ngFor="let trabaj of miPortfolio.trabajos">
             <div class="col-4">
-                <img class="imagen" src="{{trabaj.imagen}}">
+                <img class="imagen" [src]="trabaj.imagen">
             </div>
             <div class="col-7">
                 <ul>

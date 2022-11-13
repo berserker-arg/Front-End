@@ -47,10 +47,10 @@
     </div>      
    
     <!-- Estudios -->
-    <div *ngFor="let estudio of estudios">
+    <div *ngFor="let estudio of miPortfolio.estudios">
         <div class="row">
             <div class="col-4">
-                <img class="imagen" src="{{estudio.imagen}}">
+                <img class="imagen" [src]="estudio.imagen">
             </div>        
             <div class="col-7">
                 <ul>

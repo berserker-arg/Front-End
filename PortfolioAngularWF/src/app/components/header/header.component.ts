@@ -1,6 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
+
+
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -14,8 +18,5 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       console.log(data);
-  });
-  }
-
-
+  });}
 }

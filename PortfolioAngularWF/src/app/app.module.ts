@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// Modulos de formularios reactivos de angular
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,8 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { RoutingActivadoComponent } from './components/routing-activado/routing-activado.component';
 import { Error404Component } from './components/error404/error404.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RedesylogComponent } from './components/redesylog/redesylog.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -28,6 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProyectosComponent,
     RoutingActivadoComponent,
     Error404Component,
+    RedesylogComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -39,11 +45,10 @@ import { HttpClientModule } from '@angular/common/http';
       innerStrokeWidth: 8,
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
-     
-      
     }),
-    HttpClientModule
-    
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

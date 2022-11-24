@@ -49,9 +49,12 @@
     </div>          
     <div *ngFor="let proyecto of proyectos">        
         <div class="row">
-            <div> <!-- imagen proyecto -->
+            <div class="col-10"> <!-- imagen proyecto -->
                 <img class="imagen" src={{proyecto.image}} alt="imagen proyecto">
-            </div>            
+            </div>  
+            <div class="col-2">
+                <button type="button" class="btn justify-content-end"><i class="bi bi-pencil"></i></button><button type="button" class="btn justify-content-end"><i class="bi bi-trash"></i></button>
+            </div>          
         </div>
         <div class="row">
             <h4>{{proyecto.nombre}}</h4>

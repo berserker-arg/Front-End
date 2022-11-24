@@ -49,6 +49,7 @@
     <div class="row">
         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"
         *ngFor="let item of miPortfolio.items">
+            
             <circle-progress
             [percent]="item.porcent"
     
@@ -68,6 +69,8 @@
             ></circle-progress>
             
             <h6>{{item.nombre}} : {{item.porcent + "%"}}</h6>
+            <button type="button" class="btn justify-content-end"><i class="bi bi-pencil"></i></button><button type="button" class="btn justify-content-end"><i class="bi bi-trash"></i></button>
+
         </div>
     </div>
 </div>    

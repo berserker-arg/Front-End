@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'habilidades', component:HabilidadesComponent},
   {path:'proyectos', component:ProyectosComponent}, 
   {path:'login', component:LoginComponent},
-  {path:'**', component:Error404Component} //dejar en ultimo lugar de Rutas
+  {path:'**', component:Error404Component} //dejar en ultimo lugar de Rutas la de error404
  
 ];
 

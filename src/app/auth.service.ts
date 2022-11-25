@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-<<<<<<< Updated upstream
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-=======
->>>>>>> Stashed changes
+
 
 @Injectable({
   providedIn: 'root'

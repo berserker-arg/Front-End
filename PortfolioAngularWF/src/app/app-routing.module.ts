@@ -19,6 +19,7 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'**', component:Error404Component} //dejar en ultimo lugar de Rutas la de error404
  
+
 ];
 
 @NgModule({

@@ -44,9 +44,11 @@
             </div>
         </div>  
             <!--  Trabajos  -->
+
         <div class="row" *ngFor="let trabaj of miPortfolio.trabajos">
             <div class="col-3">
                 <img class="imagen" [src]="trabaj.imagen">
+
             </div>
             <div class="col-7">
                 <ul>
@@ -55,9 +57,12 @@
                     </li>
                     <p>{{trabaj.resumen}}</p>
                 </ul>
+
             </div> 
             <div class="col-2">
                 <button type="button" class="btn justify-content-end"><i class="bi bi-pencil"></i></button><button type="button" class="btn justify-content-end"><i class="bi bi-trash"></i></button>
+
             </div>
         </div>
+    </div>
 </div>

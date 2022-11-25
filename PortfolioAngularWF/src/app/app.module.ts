@@ -45,10 +45,12 @@ import { LoginComponent } from './components/login/login.component';
       innerStrokeWidth: 8,
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
+
     }),
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
+
     
   ],
   providers: [],

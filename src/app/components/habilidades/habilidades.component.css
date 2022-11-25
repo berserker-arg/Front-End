@@ -2,3 +2,15 @@ div{
     background-color: aquamarine;
     text-align: center;
 }
+#tituloo{
+    padding-top: 10px;
+}
+#habiliidades{
+    padding: 15px;
+    background-color: aquamarine;
+}
+.icon{
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+}

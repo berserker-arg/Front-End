@@ -1,0 +1,39 @@
+<div>
+    <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <br/>
+        <div class="form-group primergrupo">
+            <label for="email">Email </label>
+            <input type="email" formControlName="email" 
+            [class.bg-danger]="MailValid">
+        </div>
+        <!-- Haciendo uso de los getter del controlador-->
+        <div *ngIf="Mail?.errors && Mail?.touched">
+            <p *ngIf="Mail?.hasError('required')" class="error">
+                El email es requerido.
+            </p>
+            <p *ngIf="Mail?.hasError('email')" class="error">
+                El formato de email debe ser valido.
+            </p>
+        </div>
+        <br/>
+        <div class="form-group segundogrupo">
+            <label for="exampleInputPassword1" class="form-label">Password </label>
+            <input type="password" formControlName="password"
+            [class.bg-danger]="PasswordValid">
+        </div>
+        <!-- Haciendo uso de los getter del controlador -->
+        <div *ngIf="Password?.errors && Password?.touched">
+            <p *ngIf="Password?.hasError('required')" class="error">
+                El password es requerido.
+            </p>
+            <p *ngIf="Password?.hasError('minlength')" class="error">
+                El password debe tener 8 o mas caracteres.
+            </p>
+        </div>
+        <br/>
+        <div>
+            <button class="botonero" type="submit">Iniciar Sesión</button>
+        </div>
+        <br/>
+    </form> 
+</div>

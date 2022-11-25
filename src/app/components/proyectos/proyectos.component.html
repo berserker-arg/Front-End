@@ -1,0 +1,66 @@
+<div class="row" class="proyectos">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <h2 id="titulooo">Proyectos</h2>         
+        </div>
+        <!-- Button modal -->
+        <div class="col-2">
+            <button type="button" class="btn justify-content-end" data-bs-toggle="modal" data-bs-target="#modalProyectos"><img class="icon" src="assets/iconoMas.png"></button>
+        </div>
+    </div>
+     <!-- Modal -->
+     <div class="modal fade" id="modalProyectos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Agregar proyecto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Relleno del modal -->
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Proyecto</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nombre del proyecto</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Descripcion</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Resumen de proyecto</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Link del proyecto</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                    <div class="form-text">URL o direccion web</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Link icono en la web</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                    <div class="form-text">URL de imagen del proyecto</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+
+        </div>
+        </div>
+    </div>          
+    <div *ngFor="let proyecto of proyectos">        
+        <div class="row">
+            <div class="col-10"> <!-- imagen proyecto -->
+                <img class="imagen" src={{proyecto.image}} alt="imagen proyecto">
+            </div>  
+            <div class="col-2">
+                <button type="button" class="btn justify-content-end"><i class="bi bi-pencil"></i></button><button type="button" class="btn justify-content-end"><i class="bi bi-trash"></i></button>
+            </div>          
+        </div>
+        <div class="row">
+            <h4>{{proyecto.nombre}}</h4>
+            <p>{{proyecto.resumen}}</p>        
+        </div>       
+    </div>
+</div>
+

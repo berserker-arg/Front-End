@@ -1,96 +1,82 @@
-<div class="row">
-    <h3>Habilidades</h3>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
-        [percent]="70"
-        [radius]="80"
-        [imageSrc]="'assets/html5.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="500"
-        ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
-        [percent]="70"
-        [radius]="80"
-        [imageSrc]="'assets/html5.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="500"
-        ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
-        [percent]="70"
-        [radius]="80"
-        [imageSrc]="'assets/html5.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="500"
-        ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
-        [percent]="70"
+<div class="row" id="habilidades">
+    <div class="row">
+        <div class="col-2">
+        </div>    
+        <div class="col-8">
+            <h2 id="tituloo">Habilidades</h2>
+        </div>       
+    <!-- Button modal -->
+        <div class="col-2" >
+            <button type="button" class="btn justify-content-end" data-bs-toggle="modal" data-bs-target="#modalHabilidades"><img src="assets/iconoMas.png" class="icon"></button>     
+        </div>
+    </div>   
+        <!-- Modal -->
+    <div class="modal fade" id="modalHabilidades" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Agregar habilidad</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Relleno del modal -->
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Habilidad</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                    <div  class="form-text">Nombra la habilidad</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Porcentaje</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                    <div  class="form-text">Porcentaje de comprension sobre el tema</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Link icono en la web</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                    <div class="form-text">URL de icono de habilidad</div>
+                </div>
 
-        [radius]="80"
-        [imageSrc]="'assets/html5.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="500"
-        ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
-        [percent]="70"
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+        </div>
+    </div>      
 
-        [radius]="80"
-        [imageSrc]="'assets/html5.png'"
-        [showImage]="true"
-        [imageWidth]="50"
-        [imageHeight]="50"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="500"
-        ></circle-progress>
-        <h6>HTML5</h6>
-        <h6>70%</h6>
+    <!-- Habilidades -->
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"
+
+        *ngFor="let item of miPortfolio.items">
+            
+            <circle-progress
+            [percent]="item.porcent"
+
+    
+            [radius]="80"
+            [imageSrc]="item.image"
+            [showImage]="true"
+            [imageWidth]="50"
+            [imageHeight]="50"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="500"
+            
+            
+            ></circle-progress>
+            
+            <h6>{{item.nombre}} : {{item.porcent + "%"}}</h6>
+
+            <button type="button" class="btn justify-content-end"><i class="bi bi-pencil"></i></button><button type="button" class="btn justify-content-end"><i class="bi bi-trash"></i></button>
+
+
+
+        </div>
     </div>
 </div>    
     

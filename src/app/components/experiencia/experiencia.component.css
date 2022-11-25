@@ -6,3 +6,30 @@
 #experiencia {
     background-color: aquamarine;
 }
+.imagen{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    margin-left: 30px;
+    
+}
+
+
+#experiencia{
+    padding: 15px;
+}
+@media (min-width: 768px){
+    .imagen{
+        margin-left: 50px;
+        margin-right: 60px;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        ;
+    }
+}
+.icon{
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+}

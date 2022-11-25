@@ -1,50 +1,70 @@
-<div id="estudios">
-    <h3 id="untitulo">Estudios</h3>
-    <!-- Estudio 1 -->
-    <div class="row">       
-        <div class="col-3">
-            <img src="assets/imagenprueba.jpg">
-        </div>
-        
-        <div class="col-8">
-            <ul>
-                <li>
-                    <p></p><h3>Estudio</h3><h5>año</h5>
-                </li>
-                <p>Lugar</p>
-            </ul>
-        </div>
-    </div>    
-        <!-- Estudio 2 -->
+<div id="estudios" class="row">
     <div class="row">
-        <div class="col-3">
-            <img src="assets/imagenprueba.jpg">
+        <div class="col-2">
         </div>    
-        
         <div class="col-8">
-            <ul>
-                <li>
-                    <p></p><h3>Estudio</h3><h5>año</h5>
-                </li>
-                <p>Lugar</p>
-            </ul>
+            <h2 id="untitulo">Estudios</h2>
+        </div>       
+    <!-- Button modal -->
+        <div class="col-2" >
+            <button type="button" class="btn justify-content-end" data-bs-toggle="modal" data-bs-target="#modalEstudios"><img src="assets/iconoMas.png" class="icon"></button>     
         </div>
-    </div>    
-        <!-- Estudio 3 -->
-    <div class="row">
-        <div class="col-3">
-            <img src="assets/imagenprueba.jpg">
-        </div>        
-        <div class="col-8">
-            <ul>
-                <li>
-                    <p></p><h3>Estudio</h3><h5>año</h5>
-                </li>
-                <p>Lugar</p>
-            </ul>
-        </div>
-
-
-
     </div>
-</div>
+ 
+        <!-- Modal -->
+    <div class="modal fade" id="modalEstudios" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Agregar estudio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Relleno del modal -->
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Estudio/carrera/curso</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Titulo o certificado obtenido</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Tiempo de cursado</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Tiempo dedicado (ej. 2018-2021)</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Lugar</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Establecimiento u organizacion del curso</div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+        </div>
+    </div>      
+   
+    <!-- Estudios -->
+
+    <div *ngFor="let estudio of miPortfolio.estudios">
+        <div class="row">
+            <div class="col-3">
+                <img class="imagen" [src]="estudio.imagen">
+
+            </div>        
+            <div class="col-7">
+                <ul>
+                    <li>
+                        <h3>{{estudio.actividad}}</h3><h5>{{estudio.anio}}</h5>
+                    </li>
+                    <p>{{estudio.lugar}}</p>
+                </ul>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn justify-content-end"><i class="bi bi-pencil"></i></button><button type="button" class="btn justify-content-end"><i class="bi bi-trash"></i></button>
+            </div>
+        </div>
+    </div>        
+</div>    

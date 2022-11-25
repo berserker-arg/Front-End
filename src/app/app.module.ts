@@ -1,31 +1,39 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// Modulos de formularios reactivos de angular
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
-import { SocialComponent } from './components/social/social.component';
-import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { RoutingActivadoComponent } from './components/routing-activado/routing-activado.component';
+import { Error404Component } from './components/error404/error404.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RedesylogComponent } from './components/redesylog/redesylog.component';
+import { LoginComponent } from './components/login/login.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LogoAPComponent,
-    SocialComponent,
-    BannerComponent,
     AcercaDeMiComponent,
     EstudiosComponent,
     ExperienciaComponent,
     AppComponent,
-    HabilidadesComponent
+    HabilidadesComponent,
+    ProyectosComponent,
+    RoutingActivadoComponent,
+    Error404Component,
+    RedesylogComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -37,10 +45,12 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
       innerStrokeWidth: 8,
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
-      animationDuration: 300,
-      
-    })
-    
+
+    }),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+
     
   ],
   providers: [],

@@ -1,0 +1,22 @@
+.error{
+    color:red;
+    margin-left: 5%;
+  }
+  .border-danger{
+    border-color: red;
+    border: 5px;
+    border-radius: 5px;
+  }
+  .primergrupo{
+    margin-left: 15%;
+  }
+  .segundogrupo{
+    margin-left: 10%;
+  }
+  input{
+    margin-left: 5%;
+    padding: 5px;
+}
+.botonero{
+    margin-left: 25%;
+}

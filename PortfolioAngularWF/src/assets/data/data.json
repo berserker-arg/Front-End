@@ -1,6 +1,7 @@
 {
+	"banner":"/assets/banner.jpg",
 	"name": "William Peter Finnemore",
-	"titulos": ["Tecnico Universitario en Manteniniento Industrial e Instalaciones", "Front End Developer"],
+	"titulos": ["Tecnico Universitario en Manteniniento Industrial e Instalaciones", "Full Stack Developer"],
 	"titulosimg": ["assets/itu.png", "assets/argprog.png"],
 	"acercademi": "Estudiante de Mantenimiento industrial (cursando ultima materia) y programacion en Argentina Programa, con intereses en programacion, electronica y automatizacion.",
 	"estudios": [{

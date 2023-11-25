@@ -13,7 +13,10 @@ export class PortfolioService {
 
   constructor(private http:HttpClient) { }
 
+  //http es alias
   obtenerDatos():Observable<any> {
+
+
     return this.http.get("assets/data/data.json")
 
   }

@@ -17,6 +17,8 @@ import { Error404Component } from './components/error404/error404.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RedesylogComponent } from './components/redesylog/redesylog.component';
 import { LoginComponent } from './components/login/login.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+
 
 
 
@@ -33,7 +35,8 @@ import { LoginComponent } from './components/login/login.component';
     RoutingActivadoComponent,
     Error404Component,
     RedesylogComponent,
-    LoginComponent
+    LoginComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

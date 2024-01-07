@@ -1,10 +1,11 @@
-<div>
-    <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+<div class="login">
+    <form [formGroup]="form" class="custom-form" (ngSubmit)="onEnviar($event)" method="post">
+        <h1>Login</h1>
         <br/>
-        <div class="form-group primergrupo">
-            <label for="email">Email </label>
+        <div class="form-group">
+            <!--<label for="email">Email </label>-->
             <input type="email" formControlName="email" 
-            [class.bg-danger]="MailValid">
+            [class.bg-danger]="MailValid"  name="email" placeholder="Email" required="required">
         </div>
         <!-- Haciendo uso de los getter del controlador-->
         <div *ngIf="Mail?.errors && Mail?.touched">
@@ -16,10 +17,10 @@
             </p>
         </div>
         <br/>
-        <div class="form-group segundogrupo">
-            <label for="exampleInputPassword1" class="form-label">Password </label>
+        <div class="form-group">
+            <!--<label for="password" class="form-label">Password </label>-->
             <input type="password" formControlName="password"
-            [class.bg-danger]="PasswordValid">
+            [class.bg-danger]="PasswordValid" name="password" placeholder="Password" required="required">
         </div>
         <!-- Haciendo uso de los getter del controlador -->
         <div *ngIf="Password?.errors && Password?.touched">
@@ -32,8 +33,10 @@
         </div>
         <br/>
         <div>
-            <button class="botonero" type="submit">Iniciar Sesión</button>
+            <button class="button" type="submit">Iniciar Sesión</button>
         </div>
+        <br/>
+        <a routerLink="/register"><h6>Crear nuevo usuario</h6></a>
         <br/>
     </form> 
 </div>

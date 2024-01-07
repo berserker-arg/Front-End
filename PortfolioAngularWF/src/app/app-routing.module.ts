@@ -8,6 +8,7 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { Error404Component } from './components/error404/error404.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
   {path: '', component: AcercaDeMiComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'habilidades', component:HabilidadesComponent},
   {path:'proyectos', component:ProyectosComponent}, 
   {path:'login', component:LoginComponent},
+  {path:'register', component:RegisterComponent},
   {path:'**', component:Error404Component} //dejar en ultimo lugar de Rutas la de error404
  
 

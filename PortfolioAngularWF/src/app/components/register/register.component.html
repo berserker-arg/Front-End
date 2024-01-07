@@ -1,0 +1,73 @@
+<div class="register">
+    <form [formGroup]="form" class="custom-form" (ngSubmit)="onEnviar($event)" method="post">
+        <h1>Nuevo usuario</h1>
+        <br/>
+        <div class="form-group">
+            <!--<label for="email">Email </label>-->
+            <input type="email" formControlName="email" 
+            [class.bg-danger]="MailValid"  name="email" placeholder="Email" required="required">
+        </div>
+        <!-- Haciendo uso de los getter del controlador-->
+        <div *ngIf="Mail?.errors && Mail?.touched">
+            <p *ngIf="Mail?.hasError('required')" class="error">
+                El email es requerido.
+            </p>
+            <p *ngIf="Mail?.hasError('email')" class="error">
+                El formato de email debe ser valido.
+            </p>
+        </div>
+        <br/>
+
+
+        <div class="form-group">
+            <!--<label for="password" class="form-label">Password </label>-->
+            <input type="password" formControlName="password"
+            [class.bg-danger]="PasswordValid" name="password" placeholder="Password" required="required">
+        </div>
+        <!-- Haciendo uso de los getter del controlador -->
+        <div *ngIf="Password?.errors && Password?.touched">
+            <p *ngIf="Password?.hasError('required')" class="error">
+                El password es requerido.
+            </p>
+            <p *ngIf="Password?.hasError('minlength')" class="error">
+                El password debe tener entre 8 y 16 caracteres.
+            </p>
+            <p *ngIf="Password?.hasError('maxlength')" class="error">
+                El password debe tener entre 8 y 16 caracteres.
+            </p>
+        </div>
+        <br/>
+
+
+        <div class="form-group">
+            <!--<label for="password" class="form-label">confirmPassword </label>-->
+            <input type="password" formControlName="confirmPassword"
+            [class.bg-danger]="ConfirmPasswordValid" name="confirmPassword" placeholder="Confirmar Password" required="required">
+        </div>
+        <!-- Haciendo uso de los getter del controlador -->
+        <div *ngIf="ConfirmPassword?.errors && ConfirmPassword?.touched">
+            <p *ngIf="ConfirmPassword?.hasError('required')" class="error">
+                El password es requerido.
+            </p>
+            <p *ngIf="ConfirmPassword?.hasError('minlength')" class="error">
+                El password debe tener entre 8 y 16 caracteres.
+            </p>
+            <p *ngIf="ConfirmPassword?.hasError('maxlength')" class="error">
+                El password debe tener entre 8 y 16 caracteres.
+            </p>
+            <p *ngIf="ConfirmPassword?.hasError('passwordMismatch') && (form?.get('password')?.dirty || form?.get('confirmPassword')?.dirty)">
+              Las contraseñas no coinciden.
+            </p>
+            
+            
+            
+            
+        </div>
+        <br/>
+        <div>
+            <button class="button" type="submit">Crear</button>
+        </div>
+        <br/>
+        
+    </form> 
+</div>

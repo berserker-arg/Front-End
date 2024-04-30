@@ -1,6 +1,6 @@
 export class Experiencia {
 
-    id?: number;
+    id?: number; //? indica que este dato no es necesario en el constructor
     trabajo: string;
     tiempoTranscurrido: string;
     resumen: string;

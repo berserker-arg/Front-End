@@ -7,14 +7,16 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  url= 'http://localhost:8080/experiencia'
+  url= 'http://localhost:8080/experiencia';
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private http:HttpClient) { }
 /*
   public list(): Observable<Experiencia[]>{
     return this.httpClient.get<Experiencia[]>(this.url + ´list´);
   }
 */
-  
+  public getExperiencias(): Observable<Experiencia[]>{
+    return this.http.get<Experiencia[]>(this.url + '/verExperiencias')
+  }
 
 }

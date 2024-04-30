@@ -43,24 +43,27 @@
             </div>
             </div>
         </div>  
-            <!--  Trabajos  -->
+            <!--  Trabajos  
+            trabajo: string, tiempoTranscurrido: string, resumen: string, urlImgExperiencia: string
+            -->
 
-        <div class="row" *ngFor="let trabaj of miPortfolio.trabajos">
+        <div class="row" *ngFor="let expe of experiencias">
             <div class="col-3">
-                <img class="imagen" [src]="trabaj.imagen">
+                <img class="imagen" [src]="expe.urlImgExperiencia">
 
             </div>
             <div class="col-7">
                 <ul>
                     <li>
-                        <h3>{{trabaj.trabajo}}</h3><h5>{{trabaj.tiempo}}</h5>
+                        <h3>{{expe.trabajo}}</h3><h5>{{expe.tiempoTranscurrido}}</h5>
                     </li>
-                    <p>{{trabaj.resumen}}</p>
+                    <p>{{expe.resumen}}</p>
                 </ul>
 
             </div> 
             <div class="col-2">
-                <button type="button" class="btn justify-content-end"><i class="bi bi-pencil"></i></button><button type="button" class="btn justify-content-end"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn justify-content-end"><i class="bi bi-pencil"></i>
+                </button><button type="button" class="btn justify-content-end"><i class="bi bi-trash"></i></button>
 
             </div>
         </div>

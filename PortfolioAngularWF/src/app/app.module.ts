@@ -19,6 +19,7 @@ import { RedesylogComponent } from './components/redesylog/redesylog.component';
 import { LoginComponent } from './components/login/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { RegisterComponent } from './components/register/register.component';
+import { UsersComponent } from './components/users/users.component';
 
 
 
@@ -38,7 +39,8 @@ import { RegisterComponent } from './components/register/register.component';
     RedesylogComponent,
     LoginComponent,
     PortfolioComponent,
-    RegisterComponent
+    RegisterComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

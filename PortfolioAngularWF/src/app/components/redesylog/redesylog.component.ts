@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./redesylog.component.css']
 })
 export class RedesylogComponent implements OnInit {
-
+  userLoginOn:boolean = true;
   constructor() { }
 
   ngOnInit(): void {
